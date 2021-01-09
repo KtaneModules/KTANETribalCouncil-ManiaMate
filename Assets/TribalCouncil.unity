@@ -2681,7 +2681,7 @@ MonoBehaviour:
   m_Script: {fileID: 1702003387, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 2114007478}
+  Parent: {fileID: 0}
   Children:
   - {fileID: 605457937}
   - {fileID: 1322108311}
@@ -2696,8 +2696,8 @@ MonoBehaviour:
   DefaultSelectableIndex: 0
   AllowSelectionWrapX: 0
   AllowSelectionWrapY: 0
-  ForceSelectionHighlight: 0
-  ForceInteractionHighlight: 1
+  ForceSelectionHighlight: 1
+  ForceInteractionHighlight: 0
 --- !u!114 &2114007479
 MonoBehaviour:
   m_ObjectHideFlags: 0

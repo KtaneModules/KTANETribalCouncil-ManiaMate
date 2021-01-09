@@ -69,6 +69,7 @@ public class tribalCouncilScript : MonoBehaviour
 
     void TribalCouncilPerform()
     {
+        String[] totalnames = new String[5] {namesText[0].text, namesText[1].text, namesText[2].text, namesText[3].text, namesText[4].text};
         char[] alphabet = new char[26] {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
        'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
         int basenum = Array.IndexOf(alphabet, bomb.GetSerialNumberLetters().First()) + 1;
@@ -130,11 +131,11 @@ public class tribalCouncilScript : MonoBehaviour
         {
           answer = normalally1;
           answer2 = normalally2;
-          Debug.LogFormat("[Tribal Council #{0}] The correct person to vote off is {1} or {2}.", moduleId, answer, answer2);
+          Debug.LogFormat("[Tribal Council #{0}] Since your closest ally is Bob, the correct person to vote off is {1} or {2}.", moduleId, answer, answer2);
         }
         else if(Equals(closestally, "Louise"))
         {
-          answer = namesText[(basenum+1)%6].text;
+          answer = namesText[(Array.IndexOf(totalnames, intendedvote)+1)%6].text;
           Debug.LogFormat("[Tribal Council #{0}] Since your closest ally is Louise, the correct person to vote off is {1}.", moduleId, answer);
         }
         else if(Equals(closestally, "Jonathan"))
@@ -144,11 +145,11 @@ public class tribalCouncilScript : MonoBehaviour
         }
         else if(Equals(closestally, "Stacy"))
         {
-          answer = namesText[(Array.IndexOf(namesText, intendedvote)+3)%6].text;
+          answer = namesText[(Array.IndexOf(totalnames, intendedvote)+3)%6].text;
           int temp = 0;
           while(Equals(answer, normalally1) || Equals(answer, normalally2) || Equals(answer, closestally))
           {
-            answer = namesText[((((clockcount%3) + 2)%3)+ temp)%6].text;
+            answer = namesText[(Array.IndexOf(totalnames, intendedvote)+3+temp)%6].text;
             temp++;
           }
           Debug.LogFormat("[Tribal Council #{0}] Since your closest ally is Stacy, the correct person to vote off is {1}.", moduleId, answer);

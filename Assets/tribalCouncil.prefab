@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 114853960920223876}
   - component: {fileID: 114139553842080666}
   - component: {fileID: 132303284052357386}
-  - component: {fileID: 114832249553367052}
+  - component: {fileID: 114465143237421100}
   m_Layer: 0
   m_Name: tribalCouncil
   m_TagString: Untagged
@@ -1885,7 +1885,7 @@ MonoBehaviour:
   m_Script: {fileID: 1702003387, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 114139553842080666}
+  Parent: {fileID: 0}
   Children:
   - {fileID: 114766432346670676}
   - {fileID: 114470931060361870}
@@ -1991,6 +1991,48 @@ MonoBehaviour:
   m_Script: {fileID: 2144496390, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114465143237421100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1676409040304040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c3b246408314a40a1add252226960c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 114915473299363512}
+  bomb: {fileID: 114454383462897410}
+  buttons:
+  - {fileID: 114962036838390768}
+  - {fileID: 114020417794670430}
+  - {fileID: 114823344986955246}
+  - {fileID: 114766432346670676}
+  - {fileID: 114470931060361870}
+  - {fileID: 114780166628083086}
+  namesText:
+  - {fileID: 102548205089734954}
+  - {fileID: 102302429873332884}
+  - {fileID: 102594019272628052}
+  - {fileID: 102356064233788408}
+  - {fileID: 102917432316550712}
+  - {fileID: 102226783677163598}
+  names:
+  - Louise
+  - Mark
+  - Hannah
+  - Adam
+  - Harvey
+  - Maria
+  - Jonathan
+  - Carolyn
+  - Stacy
+  - Bob
+  fontcolor:
+  - {r: 0.15686275, g: 0.16470589, b: 0.17254902, a: 1}
+  - {r: 0.16862746, g: 0.1764706, b: 0.18431373, a: 0}
+  parchmenttext: {fileID: 102183787384984836}
 --- !u!114 &114470931060361870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2170,48 +2212,6 @@ MonoBehaviour:
   AllowSelectionWrapY: 0
   ForceSelectionHighlight: 0
   ForceInteractionHighlight: 0
---- !u!114 &114832249553367052
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676409040304040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0c3b246408314a40a1add252226960c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audio: {fileID: 114915473299363512}
-  bomb: {fileID: 114454383462897410}
-  buttons:
-  - {fileID: 114962036838390768}
-  - {fileID: 114020417794670430}
-  - {fileID: 114823344986955246}
-  - {fileID: 114766432346670676}
-  - {fileID: 114470931060361870}
-  - {fileID: 114780166628083086}
-  namesText:
-  - {fileID: 102548205089734954}
-  - {fileID: 102302429873332884}
-  - {fileID: 102594019272628052}
-  - {fileID: 102356064233788408}
-  - {fileID: 102917432316550712}
-  - {fileID: 102226783677163598}
-  names:
-  - Louise
-  - Mark
-  - Hannah
-  - Adam
-  - Harvey
-  - Maria
-  - Jonathan
-  - Carolyn
-  - Stacy
-  - Bob
-  fontcolor:
-  - {r: 0.15686275, g: 0.16470589, b: 0.17254902, a: 1}
-  - {r: 0.16862746, g: 0.1764706, b: 0.18431373, a: 0}
-  parchmenttext: {fileID: 102183787384984836}
 --- !u!114 &114835097253833782
 MonoBehaviour:
   m_ObjectHideFlags: 1
